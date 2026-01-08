@@ -1,3 +1,16 @@
+// create car stating
+
+  let car = document.getElementById("car");
+  let position = 0;
+
+  setInterval(() => {
+    position += 1;
+    if (position > window.innerWidth) {
+      position = -1;
+    }
+    car.style.top  = position + "px";
+  }, 10);
+//   ending code
 let header = document.createElement("header");
 header.style.backgroundColor = "#1f632e";
 header.style.color = "white";
